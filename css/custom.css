@@ -1,0 +1,169 @@
+.site-header {
+ background: #097138;
+}
+.themonic-nav ul.nav-menu, .themonic-nav div.nav-menu > ul {
+ border-bottom: 5px solid #097138;
+}
+.themonic-nav li a:hover {
+ background: #097138;
+ }
+
+#searchsubmit {
+ background: #097138;
+ }
+.themonic-nav .current-menu-item > a, 
+	.themonic-nav .current-menu-ancestor > a, 
+	.themonic-nav .current_page_item > a, 
+	.themonic-nav .current_page_ancestor > a{
+		 background: none repeat scroll 0 0 #097138;
+			 
+	}
+	.entry-header .entry-title, 
+.entry-title {
+	color: #097138;
+	font-weight: bold;
+	text-align:justify;
+}
+.entry-header .entry-title a:hover{
+	color: #097138;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #097138;
+	}
+a {
+	outline: none;
+	color: #097138;
+	text-decoration:none;
+}
+ 
+
+}
+
+.nav-previous a, .nav-next > a {
+	color: #FFFFFF;
+
+}
+.site-header, .site-content{ 
+	border-color: #097138;
+	}
+.wrapper { 
+	border-radius: 1px;
+	border-color: #097138;
+	}
+ 
+
+footer[role="contentinfo"] {
+background: #097138;
+width: 100%;
+	border-top: 1px solid #ededed;
+	border-radius: 5px;
+	border-bottom: 1px solid #E9E9E9;
+	clear: both;
+	font-size: 14px;
+	height: auto;
+	line-height: 2;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 24px 0;
+	}
+footer[role="contentinfo"] a {
+	color: #686868;
+	margin-left:5px;
+	text-decoration: none;
+}
+footer[role="contentinfo"] a:hover {
+	color: #333333;
+}
+
+
+.io-title-description a {
+ color:#ffffff;
+}
+ 
+ .widget-area .widget-title {
+	background: #097138;
+	font-size: 20px;
+	color: #ffffff;
+	
+}
+.widget-area .widget a {
+	color: #097138;
+	text-decoration:none;
+	font-size: 98%;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.f-l {
+    float: left;
+}
+    
+.f-r {
+    float: right;
+}
+
+.btn-arrow-right{
+background-color: #097138;
+  color: white;
+  text:bold;
+
+}
+
+
+
+.contentinfo{
+background: #097138;
+width: 100%;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #E9E9E9;
+	clear: both;
+	font-size: 14px;
+	height: auto;
+	line-height: 2;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 24px 0;
+	}
+
+
+body {
+  background-color : #ffffff;
+}
+
+.entry-content{
+color: black;
+}
+
+
+
+
+
+
+
+
