@@ -94,7 +94,13 @@ footer[role="contentinfo"] a:hover {
 	font-size: 98%;
 }
 
-
+.widget-area h3 {
+margin: 7px 0px 4px;
+font-size: 14px;
+text-transform: uppercase;
+text-align:center;
+color: #000000; 
+}
 
 
 
@@ -159,6 +165,27 @@ body {
 .entry-content{
 color: black;
 }
+
+
+
+.wrapper {
+    overflow: hidden;
+}
+.site-content {
+   padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+.widget-area {
+   padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+
+
+
+
+
 
 
 
