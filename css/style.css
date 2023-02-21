@@ -1,4 +1,29 @@
+/*
+Theme Name: Iconic One
+Theme URI: https://themonic.com/iconic-one/
+Author: Themonic
+Author URI: https://themonic.com
+Description: Iconic One is a premium quality theme with pixel perfect typography and responsiveness and is built for speed with pagespeed score of 95+, Iconic One implements proper SEO so that your content will rank high and is compatible with AIOSEO and Yoast SEO, It makes proper use of Live customizer that allows you to setup the theme in minutes, you can easily upload the logo, modify the background color, footer text, social media urls without touching any line of code. It utilizes latest HTML 5, CSS3 and wordpress native functions for creating the awesomeness that looks good on every browser. Support is free, access the support here http://themonic.com/support/, Report issues and feedback at http://themonic.com/feedback/.
+Version: 2.5
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Tested up to: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, one-column, two-columns, right-sidebar, custom-background, custom-menu, custom-logo, full-width-template, rtl-language-support, theme-options, custom-colors, flexible-header, translation-ready, news, e-commerce, sticky-post, featured-images, threaded-comments
+Text Domain: iconic-one
 
+Note: Iconic One theme supports child themes and custom.css for extensive customization without breaking the theme.
+It is recommended to use those instead of modifying core files. - http://codex.wordpress.org/Child_Themes
+
+©2019 Shashank Singh, Themonic.com
+*/
+/*Imports custom css file for easy customization.
+Edit the file here http://yoursite.com/wordpress/wp-admin/theme-editor.php?file=custom.css&theme=iconic-one
+Replace yoursite with your domain name.
+*/
+
+/*Reset Css*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -9,9 +34,32 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
 	line-height: 1;
-	
 }
-  
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
 h1,
 h2,
 h3,
@@ -71,7 +119,51 @@ section {
 	text-shadow: 0.1px 1px 2px #CCCCCC;
 }
 
- 
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: none;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+/* Add rounded corners to social media icons */
+.socialmedia img {
+ border-radius: 4px;
+}
 /* Logo responsiveness in case of big logos */
 .themonic-logo img {
 max-width: 100%;
@@ -94,9 +186,40 @@ max-width: 100%;
 
 .wrapper{border: 1px solid #e9e9e9;}
 
- 
+/* =Repeatable patterns
+-------------------------------------------------------------- */
 
- 
+/* Small headers */
+.archive-title,
+.page-title {
+	font-size: 11px;
+	line-height: 2.181818182;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #636363;
+}
+
+.entry-content th,
+.comment-content th {
+	background: #f1f1f1;
+	border: 1px solid #c1c1c1;
+	font-size: 11px;
+	line-height: 2.181818182;
+	font-weight: bold;
+	padding: 7px 14px;
+	text-transform: uppercase;
+	color: #636363;
+
+}
+
+/* Shared Post Format styling */
+article.format-quote footer.entry-meta,
+article.format-link footer.entry-meta,
+article.format-status footer.entry-meta {
+	font-size: 11px;
+	line-height: 2.181818182;
+}
+
 /* Form fields, general styles first */
 button,
 input,
@@ -108,7 +231,10 @@ textarea {
 	margin-bottom: 7px;
 	padding: 8px 10px;
 }
- 
+button,
+input {
+    line-height: normal;
+}
 textarea {
 	font-size: 100%;
 	overflow: auto;
@@ -123,9 +249,192 @@ textarea {
 input[type="submit"] {
 	-webkit-appearance: none;
 }
- 
- 
- 
+/* Reset non-text input types */
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="color"] {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+/* Buttons */
+
+li.bypostauthor cite span {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #0099ff;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #0099ff;
+    padding: 0;
+}
+
+/* Responsive images - Iconic One*/
+.entry-content img,
+.comment-content img,
+.widget img {
+	max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* This makes sure that images scales properly on all browsers*/
+}
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image {
+	max-width: 100%;
+	height: auto; /* This makes sure that images scales properly on all browsers*/
+}
+
+/* Make sure videos fit max width of parent container */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important; /* Override the Twitter embed fixed width */
+}
+
+/* Images */
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.entry-content img,
+.comment-content img,
+.widget img,
+img.header-image,
+.author-avatar img,
+img.wp-post-image {
+	margin-bottom: 10px;
+}
+.wp-caption {
+	max-width: 100%; /* Keep wide captions from overflowing their container. */
+	padding: 4px;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption,
+.entry-caption {
+	font-style: italic;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #666666;
+}
+img.wp-smiley,
+.rsswidget img {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+.entry-content dl.gallery-item {
+	margin: 0;
+}
+.gallery-item a,
+.gallery-caption {
+	width: 90%;
+}
+.gallery-item a {
+	display: block;
+}
+.gallery-caption a {
+	display: inline;
+}
+.gallery-columns-1 .gallery-item a {
+	max-width: 100%;
+	width: auto;
+}
+.gallery .gallery-icon img {
+	height: auto;
+	max-width: 90%;
+	padding: 5%;
+}
+.gallery-columns-1 .gallery-icon img {
+	padding: 3%;
+}
+
+/* Navigation for posts and pages*/
+.site-content nav {
+	border: 1px solid #EDEDED;
+	background:#f9f9f9;
+	clear: both;
+	line-height: 2;
+	margin-bottom:28px;
+	overflow: hidden;
+	padding:2%;
+}
+#nav-above {
+	padding: 24px 0;
+}
+#nav-above {
+	display: none;
+}
+.paged #nav-above {
+	display: block;
+}
+
+.nav-previous a, .nav-next > a {
+	color: #444444;
+    text-decoration: none;
+}
+.nav-previous,
+.previous-image {
+	float: left;
+	padding-bottom: 7px;
+	width: 50%;
+}
+.nav-next,
+.next-image {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+.nav-single + .comments-area,
+#comment-nav-above {
+	margin: 48px 0;
+}
+
+/* Author profiles */
+.author .archive-header {
+	margin-bottom: 24px;
+}
+.author-info {
+	border-top: 1px solid #ededed;
+	margin: 24px 0;
+	padding-top: 24px;
+	overflow: hidden;
+}
+.author-description p {
+	color: #757575;
+	font-size: 13px;
+	line-height: 1.846153846;
+}
+.author.archive .author-info {
+	border-top: 0;
+	margin: 0 0 48px;
+}
+.author.archive .author-avatar {
+	margin-top: 0;
+}
+
+
 /* =Basic structure
 -------------------------------------------------------------- */
 
@@ -137,7 +446,7 @@ body {
 	font-size: 14px;
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
-	color: #FFF;
+	color: #444;
 }
 
 a {
@@ -173,16 +482,6 @@ a:hover {
 	z-index: 100000; /* Above WP toolbar */
 }
 
-
-.themonic-nav ul.nav-menu, .themonic-nav div.nav-menu > ul {
-   
-    display: none;
-     border-bottom: 10px solid #097138;
-
- 
-}
-
-
 /* Page structure */
 .site {
 	padding: 0 24px;
@@ -203,7 +502,6 @@ a:hover {
     height: auto;
     margin-bottom:24px;
     text-align: left;
-    background:#097138;
 	}
 .site-header h1,
 .site-header h2 {
@@ -1188,13 +1486,9 @@ picture img {
 		display: none;
     }
 	
-
-
-.themonic-nav ul.nav-menu, .themonic-nav div.nav-menu > ul {
+	.themonic-nav ul.nav-menu, .themonic-nav div.nav-menu > ul {
    
     display: none;
-     border-bottom: 10px solid #097138;
-
  
 }
 .socialmedia {
@@ -1641,8 +1935,3 @@ img.alignleft {
 		margin-left: 50px;
 	}
 }
-
- 
-
-
-
