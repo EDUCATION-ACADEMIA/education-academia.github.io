@@ -128,10 +128,12 @@ a {
 
 .f-l {
     float: left;
+    padding: 25px;
 }
     
 .f-r {
     float: right;
+    padding: 25px;
 }
 
 .btn-arrow-right{
