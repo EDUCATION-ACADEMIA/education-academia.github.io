@@ -43,11 +43,15 @@
    <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/usa-history1.xml</loc>
   </sitemap>
+  
+  
      <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/Business-Administration.xml</loc>
   </sitemap>
   
-  
+    <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/businessmanagement.xml</loc>
+  </sitemap> 
   
   
   
