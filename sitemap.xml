@@ -71,7 +71,9 @@
     <loc>https://education-academia.github.io/sitemapfiles/child-development-pedagogy.xml</loc>
   </sitemap> 
   
-  
+     <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/computer-science.xml</loc>
+  </sitemap> 
   
   
 </sitemapindex>
