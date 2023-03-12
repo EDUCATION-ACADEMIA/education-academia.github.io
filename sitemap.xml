@@ -74,6 +74,8 @@
      <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/computer-science.xml</loc>
   </sitemap> 
-  
+    <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/computer-concepts-applications.xml</loc>
+  </sitemap>
   
 </sitemapindex>
