@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://education-academia.github.io/sitemapfiles/biologyap.xml</loc>
+    <loc>https://education-academia.github.io/sitemapfiles/ap-biology.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/currentaffairs.xml</loc>
@@ -10,7 +10,7 @@
     <loc>https://education-academia.github.io/sitemapfiles/neet-biology.xml</loc>
   </sitemap>
    <sitemap>
-    <loc>https://education-academia.github.io/sitemapfiles/appsychology.xml</loc>
+    <loc>https://education-academia.github.io/sitemapfiles/ap-psychology.xml</loc>
   </sitemap>
      <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/ap-world-history.xml</loc>
@@ -58,7 +58,7 @@
     <loc>https://education-academia.github.io/sitemapfiles/education-ugc-net.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://education-academia.github.io/sitemapfiles/costaccounting.xml</loc>
+    <loc>https://education-academia.github.io/sitemapfiles/cost-accounting.xml</loc>
   </sitemap> 
   <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/earth-science.xml</loc>
