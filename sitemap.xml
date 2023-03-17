@@ -73,6 +73,8 @@
     <loc>https://education-academia.github.io/sitemapfiles/everyday-science.xml</loc>
   </sitemap> 
   
-  
+     <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/general-anatomy.xml</loc>
+  </sitemap> 
   
 </sitemapindex>
