@@ -69,7 +69,9 @@
   <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/english-literature.xml</loc>
   </sitemap> 
-  
+   <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/everyday-science.xml</loc>
+  </sitemap> 
   
   
   
