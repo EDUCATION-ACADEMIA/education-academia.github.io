@@ -80,5 +80,7 @@
   <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/general-geology.xml</loc>
   </sitemap> 
-  
+   <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/gross-anatomy.xml</loc>
+  </sitemap>
 </sitemapindex>
