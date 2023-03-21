@@ -83,4 +83,8 @@
    <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/gross-anatomy.xml</loc>
   </sitemap>
+   <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/general-histology.xml</loc>
+  </sitemap>
+  
 </sitemapindex>
