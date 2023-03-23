@@ -90,5 +90,7 @@
    <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/general-knowledge.xml</loc>
   </sitemap>
-  
+  <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/indian-geography.xml</loc>
+  </sitemap>
 </sitemapindex>
