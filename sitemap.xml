@@ -93,4 +93,9 @@
   <sitemap>
     <loc>https://education-academia.github.io/sitemapfiles/indian-geography.xml</loc>
   </sitemap>
+  
+   <sitemap>
+    <loc>https://education-academia.github.io/sitemapfiles/indian-history.xml</loc>
+  </sitemap>
+  
 </sitemapindex>
