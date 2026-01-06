@@ -86,3 +86,15 @@ footer { background:#e5e7eb; text-align:center; padding:14px; font-size:14px; ma
   .btn,.nav-btn{ width:100%; }
   .nav-buttons{ flex-direction:column; }
 }
+
+@media (max-width: 768px) {
+  .mcq {
+    margin-bottom: 20px;
+  }
+  .option {
+    font-size: 14px;
+  }
+  .show-btn {
+    width: 100%;
+  }
+}
