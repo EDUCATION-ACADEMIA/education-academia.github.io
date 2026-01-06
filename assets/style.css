@@ -1,100 +1,216 @@
 /* General body */
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, sans-serif;
-  background:#f3f4f6;
-  line-height:1.6;
+  background: #f3f4f6;
+  line-height: 1.6;
 }
+
 header {
-  background:#0f172a;
-  color:white;
-  padding:14px;
-  text-align:center;
+  background: #0f172a;
+  color: white;
+  padding: 14px;
+  text-align: center;
 }
+
 main {
-  max-width:900px;
-  margin:auto;
-  background:white;
-  padding:18px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 18px;
 }
+
 .breadcrumb {
-  font-size:14px;
-  margin-bottom:12px;
+  font-size: 14px;
+  margin-bottom: 12px;
 }
-.breadcrumb a { color:#2563eb; text-decoration:none; }
-.breadcrumb span { color:#374151; }
+
+.breadcrumb a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  color: #374151;
+}
 
 /* Buttons */
 .top-buttons {
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
+
 .bottom-buttons {
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .btn {
-  text-decoration:none;
-  padding:10px 18px;
-  border-radius:6px;
-  font-weight:bold;
-  color:white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
 }
-.home-btn { background:#0f172a; }
-.download-btn { background:#2563eb; }
+
+.home-btn {
+  background: #0f172a;
+}
+
+.download-btn {
+  background: #2563eb;
+}
 
 /* MCQ */
-.mcq { border-bottom:1px solid #e5e7eb; padding:12px 0; }
-.q-text { font-weight:bold; }
-.option { margin:3px 0; }
+.mcq {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+}
+
+.q-text {
+  font-weight: bold;
+}
+
+.option {
+  margin: 3px 0;
+}
 
 /* Show / Hide Answer */
 .show-btn {
-  margin-top:6px;
-  padding:6px 12px;
-  background:#2563eb;
-  color:white;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;
-  font-weight:bold;
+  margin-top: 6px;
+  padding: 6px 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
-.show-btn:hover { background:#1e40af; }
 
-.answer { margin-top:6px; color:#166534; font-weight:bold; background:#dcfce7; padding:6px 10px; border-radius:5px; }
-.hidden { display:none; }
+.show-btn:hover {
+  background: #1e40af;
+}
+
+.answer {
+  margin-top: 6px;
+  color: #166534;
+  font-weight: bold;
+  background: #dcfce7;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
 
 /* Navigation */
 .nav-buttons {
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  margin:25px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 25px 0;
 }
-.nav-btn { flex:1; text-align:center; padding:12px; font-weight:bold; color:white; border-radius:6px; text-decoration:none; }
-.prev-btn { background:#64748b; }
-.next-btn { background:#16a34a; }
 
-footer { background:#e5e7eb; text-align:center; padding:14px; font-size:14px; margin-top:20px; }
+.nav-btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
 
-@media(max-width:480px){
-  .btn,.nav-btn{ width:100%; }
-  .nav-buttons{ flex-direction:column; }
+.prev-btn {
+  background: #64748b;
+}
+
+.next-btn {
+  background: #16a34a;
+}
+
+footer {
+  background: #e5e7eb;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .btn,
+  .nav-btn {
+    width: 100%;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
   .mcq {
     margin-bottom: 20px;
   }
+
   .option {
     font-size: 14px;
   }
+
   .show-btn {
     width: 100%;
   }
+}
+
+/* Additional Styling for Buttons and Accessibility */
+.btn:focus,
+.nav-btn:focus,
+.show-btn:focus {
+  outline: 2px solid #2563eb; /* Add a focus outline to improve accessibility */
+}
+
+/* Improving spacing between MCQs */
+@media (min-width: 769px) {
+  .mcq {
+    margin-bottom: 30px;
+  }
+}
+
+/* Hover effect for options */
+.option:hover {
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+/* Answer Padding & Margin Optimization for Small Screens */
+@media (max-width: 480px) {
+  .answer {
+    padding: 8px 12px;
+  }
+}
+
+/* Transition effects for smoothness */
+.answer {
+  transition: all 0.3s ease;
+}
+
+.show-btn {
+  transition: background-color 0.3s ease;
+}
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .breadcrumb a {
+  color: #ffa500;
+}
+
+body.dark .mcq {
+  background-color: #444;
 }
