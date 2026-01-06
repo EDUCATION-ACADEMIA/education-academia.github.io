@@ -260,3 +260,23 @@ body.dark footer {
   background-color: #2d2d2d;
   color: #fff;
 }
+
+
+/* DARK MODE - make the content area dark too */
+body.dark main {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark header {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+body.dark .breadcrumb span {
+  color: #cbd5e1;
+}
+
+body.dark .option:hover {
+  background-color: #1f2937;
+}
