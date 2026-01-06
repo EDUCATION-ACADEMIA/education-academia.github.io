@@ -280,3 +280,6 @@ body.dark .breadcrumb span {
 body.dark .option:hover {
   background-color: #1f2937;
 }
+body {
+  transition: background-color 0.5s, color 0.5s;
+}

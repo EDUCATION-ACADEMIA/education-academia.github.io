@@ -15,20 +15,14 @@ function toggleAnswer(btn) {
 // Toggle dark mode
 function toggleDark() {
   document.body.classList.toggle('dark');
-}
-
-// Optionally, store the user's theme preference in localStorage
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark');
-}
-
-// Add event listener for dark mode toggle button
-document.getElementById("dark-mode-toggle").addEventListener("click", function () {
-  toggleDark();
-  // Save the theme preference in localStorage
   if (document.body.classList.contains('dark')) {
     localStorage.setItem('theme', 'dark');
   } else {
     localStorage.setItem('theme', 'light');
   }
-});
+}
+
+// Check for theme in localStorage and apply it
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark');
+}
