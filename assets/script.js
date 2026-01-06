@@ -14,7 +14,9 @@ function toggleAnswer(btn) {
 
 // Toggle dark mode
 function toggleDark() {
+  // Toggle the dark class on the body
   document.body.classList.toggle('dark');
+  // Save the theme preference in localStorage
   if (document.body.classList.contains('dark')) {
     localStorage.setItem('theme', 'dark');
   } else {
@@ -22,7 +24,7 @@ function toggleDark() {
   }
 }
 
-// Check for theme in localStorage and apply it
+// Check if the theme was saved in localStorage and apply it on page load
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
 }

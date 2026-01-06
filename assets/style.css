@@ -283,3 +283,36 @@ body.dark .option:hover {
 body {
   transition: background-color 0.5s, color 0.5s;
 }
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark .breadcrumb a {
+  color: #ffa500;
+}
+
+body.dark .mcq {
+  background-color: #444;
+}
+
+#dark-mode-toggle {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #1e40af;
+}
+
+#dark-mode-toggle {
+  margin: 10px 0;
+}
