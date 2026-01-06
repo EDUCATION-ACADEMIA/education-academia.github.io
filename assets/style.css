@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   background: #f3f4f6;
   line-height: 1.6;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transition for smooth dark mode */
 }
 
 header {
@@ -35,14 +36,7 @@ main {
 }
 
 /* Buttons */
-.top-buttons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-.bottom-buttons {
+.top-buttons, .bottom-buttons {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -142,12 +136,11 @@ footer {
   margin-top: 20px;
 }
 
+/* Media Queries */
 @media (max-width: 480px) {
-  .btn,
-  .nav-btn {
+  .btn, .nav-btn {
     width: 100%;
   }
-
   .nav-buttons {
     flex-direction: column;
   }
@@ -157,21 +150,17 @@ footer {
   .mcq {
     margin-bottom: 20px;
   }
-
   .option {
     font-size: 14px;
   }
-
   .show-btn {
     width: 100%;
   }
 }
 
 /* Additional Styling for Buttons and Accessibility */
-.btn:focus,
-.nav-btn:focus,
-.show-btn:focus {
-  outline: 2px solid #2563eb; /* Add a focus outline to improve accessibility */
+.btn:focus, .nav-btn:focus, .show-btn:focus {
+  outline: 2px solid #2563eb;
 }
 
 /* Improving spacing between MCQs */
@@ -202,9 +191,11 @@ footer {
 .show-btn {
   transition: background-color 0.3s ease;
 }
+
+/* DARK MODE - Consolidated Styles */
 body.dark {
   background-color: #333;
-  color: #fff;
+  color: white;
 }
 
 body.dark .breadcrumb a {
@@ -214,55 +205,21 @@ body.dark .breadcrumb a {
 body.dark .mcq {
   background-color: #444;
 }
-#dark-mode-toggle {
-  background-color: #2563eb; /* Blue background */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-#dark-mode-toggle:hover {
-  background-color: #1e40af; /* Darker blue when hovered */
-}
-
-/* Dark Mode Styles */
-body.dark {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Dark mode breadcrumb links */
-body.dark .breadcrumb a {
-  color: #ffa500; /* Change the breadcrumb link color in dark mode */
-}
-
-/* Dark mode for MCQs */
-body.dark .mcq {
-  background-color: #444;
-  color: #fff;
-}
-
-/* Dark mode for buttons */
 body.dark .btn {
   background-color: #1e40af;
 }
 
-/* Dark mode for show/hide buttons */
 body.dark .show-btn {
   background-color: #16a34a;
 }
 
-/* Dark mode for footer */
 body.dark footer {
   background-color: #2d2d2d;
   color: #fff;
 }
 
-
-/* DARK MODE - make the content area dark too */
+/* Dark Mode Content Area */
 body.dark main {
   background: #111827;
   color: #e5e7eb;
@@ -280,39 +237,17 @@ body.dark .breadcrumb span {
 body.dark .option:hover {
   background-color: #1f2937;
 }
-body {
-  transition: background-color 0.5s, color 0.5s;
-}
 
-body {
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-body.dark {
-  background-color: #333;
-  color: white;
-}
-
-body.dark .breadcrumb a {
-  color: #ffa500;
-}
-
-body.dark .mcq {
-  background-color: #444;
-}
-
+/* Dark Mode Button */
 #dark-mode-toggle {
   background-color: #2563eb;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 #dark-mode-toggle:hover {
   background-color: #1e40af;
-}
-
-#dark-mode-toggle {
-  margin: 10px 0;
 }
